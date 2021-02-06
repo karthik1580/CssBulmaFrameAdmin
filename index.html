@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <style>
+        nav.navbar{border-top: 4px solid #276cda; margin-bottom: .8rem;}
+        html, body{background-color: #ECF0F3;}
+        .menu-label{font-weight: bold; font-size: 15px;}
+        .menu-list a {color: #0F1D38;font-size: 14px; font-weight: 700;}
+        .menu-list a.active{color: #276cda;}
+        .is-marg-10{margin-bottom: 20px;}
+    </style>
+
+    <!-- 
+        https://bulmatemplates.github.io/bulma-templates 
+        https://bulmatemplates.github.io/bulma-templates/templates/cards.html
+        https://bulma.io/documentation/components/menu/
+        https://github.com/BulmaTemplates/bulma-templates/blob/master/css/admin.css
+        https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/admin.html
+        https://bulmatemplates.github.io/bulma-templates/templates/admin.html
+    -->
+  </head>
+  <body class="is-light">
+      <!-- is-white, is-black, is-light, is-dark, is-primary, is-link, is-info, is-success, is-warning, is-danger-->
+    <nav class="navbar is-white">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item brand-text is-black" href="javascript.void(0)">
+                    <h1>Admin</h1>
+                </a>
+                <div class="navbar-burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <!-- navbar-start, navbar-end-->
+                <div class="navbar-end">
+                    <a href="javascript.void(0)" class="navbar-item">Home</a>
+                    <a href="javascript.void(0)" class="navbar-item">About</a>
+                    <a href="javascript.void(0)" class="navbar-item">Order</a>
+                    <a href="javascript.void(0)" class="navbar-item">Payments</a>
+                    <a href="javascript.void(0)" class="navbar-item">Exceptions</a>
+                    <a href="javascript.void(0)" class="navbar-item">Reports</a>
+                    <a href="javascript.void(0)" class="navbar-item">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- 
+            columns is a container of the column inside
+            we can add required colums inside column
+        -->
+        <div class="columns">
+            <div class="column is-3">
+                <!--./side column start-->
+                <aside class="menu">
+                    <p class="menu-label"> General</p>
+                    <ul class="menu-list">
+                        <li><a href="javascript:void(0);" class="active">Dashboard</a></li>
+                        <li><a href="javascript.void(0);">Customers</a></li>
+                        <li><a href="javascript.void(0);">Others</a></li>
+                    </ul>
+                    <p class="menu-label">Administration</p>
+                    <ul class="menu-list">
+                        <li><a href="javascript:void(0);">Team Settings</a></li>
+                        <li><a href="javascript:void(0);">Manage Your Team</a>
+                            <ul class="menu-list">
+                                <li><a href="javascript:void(0);" class="active">Members</a></li>
+                                <li><a href="javascript:void(0);">Plugins</a></li>
+                                <li><a href="javascript:void(0);">Add Members</a></li>
+                                <li><a href="javascript:void(0);">Remove Members</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:void(0);">Invitations</a></li>
+                        <li><a href="javascript:void(0);">Cloud Storage Environment Settings</a></li>
+                        <li><a href="javascript:void(0);">Authentication</a></li>
+                        <li><a href="javascript:void(0);">Payments</a></li>
+                    </ul>
+                    <p class="menu-label"></p>
+                </aside>
+                <!--./side column end-->
+            </div>            
+            <div class="column is-9">
+                <!--./main column start-->
+                <nav class="breadcrumb" aria-label="breadcrumbs">
+                    <ul>
+                        <li><a href="../">Bulma</a></li>
+                        <li><a href="../">templates</a></li>
+                        <li><a href="../">Examples</a></li>
+                        <li><a href="javascript.void(0)" class="is-active" aria-current="page">Admin</a></li>
+                    </ul>
+                </nav>
+
+                <section class="hero is-info welcome is-small is-marg-10">
+                    <div class="hero-body">
+                        <div class="container">
+                            <h1 class="title">
+                                Hello, Admin.
+                            </h1>
+                            <h2 class="subtitle">
+                                I hope you are having a great day!
+                            </h2>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info-tiles">
+                    <div class="tile is-ancestor has-text-centered">
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">439k</p>
+                                <p class="subtitle">Users</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">59k</p>
+                                <p class="subtitle">Products</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">3.4k</p>
+                                <p class="subtitle">Open Orders</p>
+                            </article>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child box">
+                                <p class="title">19</p>
+                                <p class="subtitle">Exceptions</p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="columns">
+                    <div class="column is-6">.zkfj</div>
+                    <div class="column is-6">
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Inventory Search
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                                        <span class="icon is-medium is-right">
+                      <i class="fa fa-check"></i>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    User Search
+                                </p>
+                                <a href="#" class="card-header-icon" aria-label="more options">
+                  <span class="icon">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </span>
+                </a>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <div class="control has-icons-left has-icons-right">
+                                        <input class="input is-large" type="text" placeholder="">
+                                        <span class="icon is-medium is-left">
+                      <i class="fa fa-search"></i>
+                    </span>
+                                        <span class="icon is-medium is-right">
+                      <i class="fa fa-check"></i>
+                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--./main column end-->
+            </div>         
+        </div>
+    </div>
+
+  </body>
+</html>
